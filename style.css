@@ -1,0 +1,136 @@
+p {
+  margin: 0;
+}
+body {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.warning {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #011627;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.warning,
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.warning-content {
+  max-width: 512px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+p.warning-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+p.warning-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+.warning-buttons {
+  margin: -8px;
+}
+
+.warning-buttons .button {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 4px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+#button-accept {
+  background-color: #1789fc;
+  border: 2px solid #1789fc;
+  color: white;
+  transition: 0.3s;
+}
+
+#button-accept:hover {
+  color: #296eb4;
+  border: 2px solid #296eb4;
+  background-color: unset;
+  transition: 0.3s;
+}
+
+#button-deny {
+  color: #296eb4;
+  border: 2px solid #296eb4;
+  transition: 0.3s;
+}
+
+#button-deny:hover {
+  background-color: #1789fc;
+  border: 2px solid #1789fc;
+  color: white;
+  transition: 0.3s;
+}
+
+.content {
+  z-index: 1;
+}
+
+img#player {
+  height: 100vh;
+  width: 100vw;
+}
+
+.warning.hidden {
+  display: none;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./inter-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./inter-v12-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./inter-v12-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./inter-v12-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("./inter-v12-latin-regular.svg#Inter")
+      format("svg"); /* Legacy iOS */
+}
+/* inter-700 - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./inter-v12-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./inter-v12-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./inter-v12-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./inter-v12-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("./inter-v12-latin-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./inter-v12-latin-700.svg#Inter")
+      format("svg"); /* Legacy iOS */
+}
